@@ -77,50 +77,34 @@ long_data <- final_data %>%
   pivot_longer(cols = -c(Sample, Diet_type, Species, Animal), names_to = "genus", values_to = "Abundance") %>%
   mutate(genus = factor(genus, levels = c(top_genera, "Other")))
 
-# === Define bright vs subtle genera ===
-bright_genera <- c(
-  # Carnivore-associated genera
-  "Fusobacterium", "Peptoclostridium", "Prevotellaceae_UCG-004", "Clostridium_sensu_stricto_1", "Escherichia-Shigella",
-  # Non-Ruminant-associated genera
-  "Treponema", "p-251-o5", "Bacteroides", "Rikenellaceae_RC9_gut_group", "UCG-010",
-  # Ruminant-associated genera / groups
-  "Blautia", "NK4A214_group",
-  "Prevotellaceae_UCG-003", "Prevotellaceae_UCG-001",
-  "Christensenellaceae_R-7_group",  "Clostridia_UCG-014", "UCG-005", "Lachnospiraceae_UCG-009", "Lachnospiraceae_AC2044_group"
-)
 
-# Color palettes
-n_bright <- sum(top_genera %in% bright_genera)
-n_subtle <- length(top_genera) - n_bright
+genus_colors <- read.csv("data/family_colors_genus.csv")
+genus_colors_v <- setNames(genus_colors$Color, genus_colors$Family)
 
-bright_palette <- colorRampPalette(brewer.pal(8, "Set1"))(n_bright)
+ggplot(long_data, aes(x = Sample, y = Abundance, fill = genus)) +
+  geom_col(color = "black", size = 0.1) +
+  facet_grid(. ~ Diet_type, scales = "free_x", space = "free_x") +
+  scale_fill_manual(values = genus_colors_v) +
+  theme_bw(base_size = 14) +
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.text.y = element_text(size = 14),
+    axis.title.y = element_text(size = 16, face = "bold"),
+    legend.title = element_text(size = 16, face = "bold"),
+    legend.text = element_text(size = 14),
+    legend.position = "right",
+    strip.background = element_blank(),
+    strip.text = element_text(size = 18, face = "bold")
+  ) +
+  labs(y = "Relative Abundance (%)", fill = "Genera") +
+  guides(fill = guide_legend(ncol = 1))
 
 
-subtle_palette <- colorRampPalette(c("#CDFADB", "#F0C1E1", "#dcedc1","#A5B68D", "#F4DEB3", "#C5D3E8", "#ffd3b6","#CBE2B5", "#E8C5E5", "#D6DAC8", "#ff8b94" ,"#E1F0C1", "#8DA5B6","#FAD9CD", "#B3F4DE"))(n_subtle)
-
-# Shuffle bright palette
-bright_palette <- sample(bright_palette)
-# Assign unique colors
-genus_colors <- c()
-bright_idx <- 1
-
-subtle_idx <- 1
-
-for (g in top_genera) {
-  if (g %in% bright_genera) {
-    genus_colors[g] <- bright_palette[bright_idx]
-    bright_idx <- bright_idx + 1
-  } else {
-    genus_colors[g] <- subtle_palette[subtle_idx]
-    subtle_idx <- subtle_idx + 1
-  }
-}
-
-# Add color for 'Other'
-genus_colors["Other"] <- "darkgrey"
-genus_colors["uncultured"] <- "#ffaaa5"
-genus_colors["Peptoniphilus"] <- "darkgreen"
-
+ggsave("output/figures/Genus.png", width = 20, height = 10, dpi = 600)
 
 ## Carinvores 
 
@@ -140,7 +124,7 @@ c_data <- c_data %>%
 ggplot(c_data, aes(x = Animal, y = Abundance, fill = genus)) +
   geom_col(color = "black", size = 0.2) +
   facet_wrap(~ Species, scales = "free_x", nrow = 1) +
-  scale_fill_manual(values = genus_colors) +
+  scale_fill_manual(values = genus_colors_v) +
   theme_bw(base_size = 16) +  
   theme(
     panel.grid.major = element_blank(),
@@ -182,7 +166,7 @@ nr_data <- nr_data %>%
 ggplot(nr_data, aes(x = Animal, y = Abundance, fill = genus)) +
   geom_col(color = "black", size = 0.2) +
   facet_wrap(~ Species, scales = "free_x", nrow = 1) +
-  scale_fill_manual(values = genus_colors) +
+  scale_fill_manual(values = genus_colors_v) +
   theme_bw(base_size = 16) +  
   theme(
     panel.grid.major = element_blank(),
@@ -204,7 +188,7 @@ ggplot(nr_data, aes(x = Animal, y = Abundance, fill = genus)) +
     fill = "Bacterial genus"
   )
 
-ggsave("output/figures/microbiome_NR_genus.png", width = 15, height = 6, dpi = 600)
+ggsave("output/figures/microbiome_NR_genus.png", width = 20, height = 6, dpi = 600)
 
 ## Ruminants
 
@@ -223,7 +207,7 @@ r_data <- r_data %>%
 ggplot(r_data, aes(x = Animal, y = Abundance, fill = genus)) +
   geom_col(color = "black", size = 0.2) +
   facet_wrap(~ Species, scales = "free_x", nrow = 1) +
-  scale_fill_manual(values = genus_colors) +
+  scale_fill_manual(values = genus_colors_v) +
   theme_bw(base_size = 16) +  
   theme(
     panel.grid.major = element_blank(),
@@ -245,4 +229,4 @@ ggplot(r_data, aes(x = Animal, y = Abundance, fill = genus)) +
     fill = "Bacterial genus"
   )
 
-ggsave("output/figures/microbiome_R_genus.png", width = 15, height = 6, dpi = 600)
+ggsave("output/figures/microbiome_R_genus.png", width = 10, height = 6, dpi = 600)
