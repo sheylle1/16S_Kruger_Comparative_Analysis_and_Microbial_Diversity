@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>q2_diversity : alpha_rarefaction</title>
+    <link rel="stylesheet" href="./q2templateassets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./q2templateassets/css/normalize.css"/>
+    <link rel="stylesheet" href="./q2templateassets/css/base-template.css"/>
+    <script src="./q2templateassets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="./q2templateassets/js/bootstrap.min.js" charset="utf-8"></script>
+    
+<script src='dist/vendor.bundle.js'></script>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="q2templatesheader" class="row">
+        <div class="col-lg-12">
+          <a href="http://qiime2.org/">
+            <img src="./q2templateassets/img/qiime2-rect-200.png"
+            alt="QIIME 2">
+          </a>
+        </div>
+      </div>
+        
+
+<div class='row'>
+  <div class='col-lg-12' id='main'>
+    <h1>Alpha rarefaction</h1>
+
+    
+
+    <div class='controls row'>
+      <div class='col-lg-2 form-group downloadCSV'>
+        <label>&nbsp;</label>
+        <a class='btn btn-default form-control'>
+          Download CSV
+        </a>
+      </div>
+      <div class='col-lg-2 form-group metricPicker'>
+        <label>Metric</label>
+        <select class='form-control'></select>
+      </div>
+      <div class='col-lg-3 form-group columnPicker'>
+        <label>Sample Metadata Column</label>
+        <select class='form-control'></select>
+      </div>
+    </div>
+    <div class='viz row'>
+      <div class='col-lg-9' style='width: 1120px;'>
+        <svg class='plotSvg'>
+          <g id='chart'>
+            <g class='x axis'></g>
+            <g class='y axis'></g>
+            <text class='x label'></text>
+            <text class='y label'></text>
+          </g>
+          <g id='subChart'>
+            <g class='x axis'></g>
+            <g class='y axis'></g>
+            <text class='x label'></text>
+            <text class='y label'></text>
+          </g>
+        </svg>
+      </div>
+      <div class='col-lg-2' style='height: 1050px;'>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#helpModal">
+          Help
+        </button>
+        <div class="modal fade" id="helpModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>
+                    &times;
+                  </span>
+                </button>
+                <h4 class="modal-title" id="helpModalLabel">
+                  Alpha Diversity Help
+                </h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  In the legend below, click the box symbols to toggle the
+                  display of the line charts and click the circles to toggle
+                  the display of the box plots and scatter plots. If a color is
+                  visible in the symbol, the corresponding plot elements are
+                  displayed, otherwise they are hidden.
+                </p>
+
+                <p>
+                  The box plots in the upper figure represent the distribution
+                  of the selected alpha diversity metric for each group of
+                  samples at each even sampling depth. The lower and upper
+                  whiskers of the box plot are the 9th and 91st percentiles of
+                  the distribution (respectively), while the lower and upper
+                  extents of the box are the 25th and 75th percentiles of the
+                  distribution (respectively). The horizontal bar through the
+                  middle of the box is the median  of the dstribution
+                  (i.e., the 50th percentile). Outlier points of these
+                  distributions are not shown.
+                </p>
+
+                <p>
+                  The line chart in the upper figure connects the median
+                  values of the alpha diversity metric distribution
+                  across the sampling depths.
+                </p>
+
+                <p>
+                  If a sampling depth is higher than the number of sequences
+                  in a sample, that sample will not be included in the
+                  rarefaction plot at that sampling depth. The line chart in
+                  the lower figure illustrates the number of samples in each
+                  group (i.e., the sample size for each box plot) at each
+                  sampling depth.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style='height: 25px; width: 300px; overflow-x: auto; overflow-y: hidden'>
+          <svg width='200' height='20' class='legendTitleSvg'>
+            <g class='legendTitle'></g>
+          </svg>
+        </div>
+        <div style='height: 900px; width: 300px; overflow-x: auto;' class='legendBoxDiv'>
+          <svg class='legendBoxSvg'>
+            <g></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var d = {};
+  var columns = ['LIMS', 'SAMPLE.NAME', 'RNA.NAME', 'DNA.NAME', 'NOTES', 'DNASE.TREATED', 'EXTRACTION.DATE', 'LabNumber', 'Date', 'Common.name_Species', 'Genus', 'Species', 'otherid', 'Microchip', 'Age.class', 'Sex', 'Locality', 'Section', 'Protected.Area', 'Country', 'GPS.S', 'GPS.E', 'FAECES_SampleNumber', 'FAECES_Prep.type', 'FAECES_Count', 'Diet_type'];
+  var metrics = ['faith_pd', 'shannon', 'observed_features'];
+  var steps = 10;
+  function load_data(metric, column, data) {
+    if (column) {
+      if (!d[metric]) {
+        d[metric] = {};
+      }
+      d[metric][column] = data;
+    } else {
+      d[metric] = data;
+    }
+  }
+</script>
+
+<script src='faith_pd-LIMS.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-SAMPLE.NAME.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-RNA.NAME.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-DNA.NAME.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-NOTES.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-DNASE.TREATED.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-EXTRACTION.DATE.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-LabNumber.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Date.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Common.name_Species.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Genus.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Species.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-otherid.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Microchip.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Age.class.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Sex.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Locality.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Section.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Protected.Area.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Country.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-GPS.S.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-GPS.E.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-FAECES_SampleNumber.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-FAECES_Prep.type.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-FAECES_Count.jsonp?callback=load_data'></script>
+
+<script src='faith_pd-Diet_type.jsonp?callback=load_data'></script>
+
+<script src='shannon-LIMS.jsonp?callback=load_data'></script>
+
+<script src='shannon-SAMPLE.NAME.jsonp?callback=load_data'></script>
+
+<script src='shannon-RNA.NAME.jsonp?callback=load_data'></script>
+
+<script src='shannon-DNA.NAME.jsonp?callback=load_data'></script>
+
+<script src='shannon-NOTES.jsonp?callback=load_data'></script>
+
+<script src='shannon-DNASE.TREATED.jsonp?callback=load_data'></script>
+
+<script src='shannon-EXTRACTION.DATE.jsonp?callback=load_data'></script>
+
+<script src='shannon-LabNumber.jsonp?callback=load_data'></script>
+
+<script src='shannon-Date.jsonp?callback=load_data'></script>
+
+<script src='shannon-Common.name_Species.jsonp?callback=load_data'></script>
+
+<script src='shannon-Genus.jsonp?callback=load_data'></script>
+
+<script src='shannon-Species.jsonp?callback=load_data'></script>
+
+<script src='shannon-otherid.jsonp?callback=load_data'></script>
+
+<script src='shannon-Microchip.jsonp?callback=load_data'></script>
+
+<script src='shannon-Age.class.jsonp?callback=load_data'></script>
+
+<script src='shannon-Sex.jsonp?callback=load_data'></script>
+
+<script src='shannon-Locality.jsonp?callback=load_data'></script>
+
+<script src='shannon-Section.jsonp?callback=load_data'></script>
+
+<script src='shannon-Protected.Area.jsonp?callback=load_data'></script>
+
+<script src='shannon-Country.jsonp?callback=load_data'></script>
+
+<script src='shannon-GPS.S.jsonp?callback=load_data'></script>
+
+<script src='shannon-GPS.E.jsonp?callback=load_data'></script>
+
+<script src='shannon-FAECES_SampleNumber.jsonp?callback=load_data'></script>
+
+<script src='shannon-FAECES_Prep.type.jsonp?callback=load_data'></script>
+
+<script src='shannon-FAECES_Count.jsonp?callback=load_data'></script>
+
+<script src='shannon-Diet_type.jsonp?callback=load_data'></script>
+
+<script src='observed_features-LIMS.jsonp?callback=load_data'></script>
+
+<script src='observed_features-SAMPLE.NAME.jsonp?callback=load_data'></script>
+
+<script src='observed_features-RNA.NAME.jsonp?callback=load_data'></script>
+
+<script src='observed_features-DNA.NAME.jsonp?callback=load_data'></script>
+
+<script src='observed_features-NOTES.jsonp?callback=load_data'></script>
+
+<script src='observed_features-DNASE.TREATED.jsonp?callback=load_data'></script>
+
+<script src='observed_features-EXTRACTION.DATE.jsonp?callback=load_data'></script>
+
+<script src='observed_features-LabNumber.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Date.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Common.name_Species.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Genus.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Species.jsonp?callback=load_data'></script>
+
+<script src='observed_features-otherid.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Microchip.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Age.class.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Sex.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Locality.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Section.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Protected.Area.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Country.jsonp?callback=load_data'></script>
+
+<script src='observed_features-GPS.S.jsonp?callback=load_data'></script>
+
+<script src='observed_features-GPS.E.jsonp?callback=load_data'></script>
+
+<script src='observed_features-FAECES_SampleNumber.jsonp?callback=load_data'></script>
+
+<script src='observed_features-FAECES_Prep.type.jsonp?callback=load_data'></script>
+
+<script src='observed_features-FAECES_Count.jsonp?callback=load_data'></script>
+
+<script src='observed_features-Diet_type.jsonp?callback=load_data'></script>
+
+<script src='dist/bundle.js'></script>
+
+    </div>
+    <script type="text/javascript">
+      if (window.frameElement) {
+          document.getElementById('q2templatesheader').remove();
+      }
+    </script>
+    
+    
+  </body>
+</html>
