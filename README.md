@@ -5,6 +5,11 @@
 This repository contains data, code, and analysis workflows for a comparative study of gut microbiota in wild mammals from Kruger National Park, South Africa. The repository supports reproducible research and facilitates peer review of the submitted manuscript.
 
 **Note:** Materials in this repository may be updated upon final publication.
+## Overview
+
+This repository contains data, code, and analysis workflows for a comparative study of gut microbiota in wild mammals from Kruger National Park, South Africa. The repository supports reproducible research and facilitates peer review of the submitted manuscript.
+
+**Note:** Materials in this repository may be updated upon final publication.
 
 ---
 
@@ -14,7 +19,6 @@ This repository contains data, code, and analysis workflows for a comparative st
 ├── data/
 │   ├── raw/                    # Raw input data
 │   ├── processed/              # Processed data outputs
-│   ├── qiime2_raw/             # Raw inputs for qiime 2
 │   ├── intermediate/           # Intermediate analysis outputs
 │   └── metadata/               # Sample metadata
 ├── scripts/
@@ -23,7 +27,6 @@ This repository contains data, code, and analysis workflows for a comparative st
 │   ├── machine-learning/       # Random Forest and ML analyses
 │   └── extra/                  # Additional analyses
 ├── output/
-│   ├── extra/                  # Additional analyses
 │   └── figures/                # Generated figures
 └── docs/
     ├── supplementary/          # Supplementary figures
@@ -52,12 +55,6 @@ To facilitate reproducibility without reprocessing raw data, intermediate output
 - Demultiplexed reads
 - Filtered feature tables
 - Phylogenetic trees
-- core-metrics-results
-- exported metrics
-
-### Final figures
-
-The figures within the manuscript are stored in `doc/main` and supplementary material in `docs/supplementary`
 
 ---
 
@@ -159,7 +156,6 @@ Supplementary analyses are included to provide extended insights:
 - Association analyses
 - Disease detection
 - Extended importance analyses
-- Dunn-tests
 
 **Scripts:**
 - `scripts/extra/`
