@@ -95,7 +95,7 @@ make_confusion_plot <- function(data, remove_outliers = TRUE, plot_title = "") {
 }
 
 # Load data
-data <- read.csv("data/level-6.csv", check.names = FALSE)
+data <- read.csv("D:/CERI/Carla_16S/Manuscript_analysis/data/raw/level-6.csv", check.names = FALSE)
 
 # Remove additional outliers
 additional_outliers <- c("K058700-R", "K058796-R", "K058824-R", "K058810-R", "K058694-R")
@@ -108,6 +108,17 @@ plot_no_outliers <- make_confusion_plot(data, remove_outliers = TRUE, plot_title
 # Combine plots
 final_plot <- plot_all + plot_no_outliers + plot_layout(ncol = 2)
 
+final_plot
+
+for (ext in c("png", "pdf", "tiff")) {
+  ggsave(
+    filename = paste0("Figure_S2.", ext),
+    plot = final_plot,
+    width = 16,
+    height = 6,
+    dpi = 600
+  )
+}
 # Save combined plot
 ggsave("output/figures/Supplementary_confusion_matrix.png",
        plot = final_plot,
