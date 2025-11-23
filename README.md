@@ -5,16 +5,17 @@
 This repository contains data, code, and analysis workflows for a comparative study of gut microbiota in wild mammals from Kruger National Park, South Africa. The repository supports reproducible research and facilitates peer review of the submitted manuscript.
 
 **Note:** Materials in this repository may be updated upon final publication.
-
 ---
 
 ## Repository Structure
 
 ```
 ├── data/
-│   ├── raw/                    # Raw input data
+│   ├── raw/                    # Raw input data files
 │   ├── processed/              # Processed data outputs
 │   ├── intermediate/           # Intermediate analysis outputs
+│   ├── qiime2_raw/             # Raw input data for Qiime2
+│   ├── download/               # Instructions for Raw sample downloads
 │   └── metadata/               # Sample metadata
 ├── scripts/
 │   ├── qiime2/                 # QIIME2 workflow and pipeline
@@ -23,9 +24,10 @@ This repository contains data, code, and analysis workflows for a comparative st
 │   └── extra/                  # Additional analyses
 ├── output/
 │   └── figures/                # Generated figures
+│   └── extra/                  # Extra outputs
 └── docs/
     ├── supplementary/          # Supplementary figures
-    └── main/                   # Final manuscript figures
+    └── main/                   # Manuscript figures
 
 ```
 
@@ -35,7 +37,7 @@ This repository contains data, code, and analysis workflows for a comparative st
 
 ### Raw Data
 
-Raw sequencing data are hosted externally due to file size constraints. Accession numbers and download instructions are provided in `data/README.md`.
+Raw sequencing data are hosted externally due to file size constraints. Accession numbers and download instructions are provided in `data/download/README.md`.
 
 ### Metadata
 
@@ -50,6 +52,7 @@ To facilitate reproducibility without reprocessing raw data, intermediate output
 - Demultiplexed reads
 - Filtered feature tables
 - Phylogenetic trees
+- Core metric phylogentics
 
 ---
 
@@ -108,8 +111,26 @@ To facilitate reproducibility without reprocessing raw data, intermediate output
 - `docs/main/Manuscript_figures.pdf`
 
 ---
+### Figures 5 & 6: Ternary Plot & Heatmap
 
-### Figures 5 & 6: Taxonomic Composition by Species
+**Methods:** QIIME2 taxonomic classification with R aggregation and visualization
+
+**Input files:**
+- `data/processed/taxonomic/` (QIIME2 taxonomy output)
+
+**Scripts:**
+- `scripts/R/` (taxonomy plotting scripts)
+
+**Analyses:**
+- Top 30 genus-level composition
+- Identified genus level taxa of potential pathogenic origin.
+
+**Output:**
+- `output/figures/Final_figures/`
+
+---
+
+### Figures 7 & 8: Taxonomic Composition by Species
 
 **Methods:** QIIME2 taxonomic classification with R aggregation and visualization
 
@@ -125,20 +146,21 @@ To facilitate reproducibility without reprocessing raw data, intermediate output
 
 **Output:**
 - `output/figures/tax_by_species/`
-- `docs/main/Manuscript_figures.pdf`
+- `output/figures/Final_figures/`
 
 ---
 
-### Figures 7 & 8: Variable Importance (Machine Learning)
+### Figures 9 & 10: Variable Importance (Machine Learning)
 
 **Methods:** Random Forest classification and feature importance analysis in R
 
 **Scripts:**
-- `scripts/machine-learning/` (RF classification, confusion matrices, variable importance)
+- `scripts/machine-learning/` (RF classification, confusion matrices)
+- `scripts/R/` (variable importance)
 
 **Output:**
 - `output/figures/machine-learning/`
-- `docs/main/Manuscript_figures.pdf`
+- `output/figures/Final_figures/`
 
 ---
 
