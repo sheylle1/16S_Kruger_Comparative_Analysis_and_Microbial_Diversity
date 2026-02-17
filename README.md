@@ -1,4 +1,4 @@
-# Comparative Analysis of Gut Microbiota Composition and Diversity in Wild Mammals from the Kruger National Park, South Africa
+# Dietary Ecology Structures Gut Microbiome Assembly in Sympatric Wild Mammals from Kruger National Park, South Africa
 
 ## Overview
 
