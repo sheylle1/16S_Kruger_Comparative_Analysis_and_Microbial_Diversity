@@ -1,0 +1,4 @@
+"Metric","n","statistic","df","p","method"
+"Shannon_entropy",89,32.61552416,2,"8.27e-08","Kruskal-Wallis"
+"Faith_PD",89,50.23941421,2,"1.23e-11","Kruskal-Wallis"
+"Observed_features",89,33.14602429,2,"6.35e-08","Kruskal-Wallis"

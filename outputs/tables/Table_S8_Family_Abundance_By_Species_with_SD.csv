@@ -1,0 +1,150 @@
+"Species","Family","Mean_SD","Mean","SD"
+"African buffalo","Oscillospiraceae","14.17 ± 6.8",14.1660883126832,6.80235733457919
+"African buffalo","Lachnospiraceae","11.21 ± 9.71",11.2127159235857,9.70735647317904
+"African buffalo","Rikenellaceae","9.96 ± 4.91",9.96484355789918,4.91136256324916
+"African buffalo","Prevotellaceae","8.5 ± 3.7",8.49665846236205,3.69715487695823
+"African buffalo","UCG-010","8.46 ± 8.54",8.45561317065673,8.54083983048047
+"African buffalo","Bacteroidaceae","6.81 ± 4.44",6.80818162191922,4.44441376243439
+"African buffalo","uncultured","5.01 ± 3.01",5.01397263127649,3.01496724384972
+"African buffalo","[Eubacterium]_coprostanoligenes_group","4.77 ± 2.66",4.76917377593694,2.65635375484284
+"African buffalo","Ruminococcaceae","3.24 ± 1.5",3.23860464677187,1.49883912329118
+"African buffalo","Acidaminococcaceae","2.57 ± 1.34",2.56896295253241,1.34471788969337
+"African buffalo","Akkermansiaceae","1.73 ± 1.97",1.72754555395138,1.97205026411012
+"African buffalo","Spirochaetaceae","1.68 ± 3.74",1.68008361740484,3.73766148207784
+"African buffalo","Saccharimonadaceae","1.58 ± 1.77",1.57527189146317,1.76705673044534
+"African buffalo","Christensenellaceae","1.37 ± 1.56",1.36824821784979,1.56292441838442
+"African buffalo","Bacteroidales_RF16_group","1.29 ± 1.56",1.28534099397543,1.56364570498131
+"African buffalo","Anaerovoracaceae","1.16 ± 1.83",1.15591537077617,1.82577855824645
+"African buffalo","Fibrobacteraceae","1.1 ± 3.13",1.09783202926291,3.12503565616598
+"African buffalo","p-2534-18B5_gut_group","1.01 ± 1.52",1.01202639707025,1.51754096779219
+"African elephant","Prevotellaceae","18.28 ± 9.67",18.2788966172852,9.66764641278553
+"African elephant","Lachnospiraceae","16.68 ± 7.2",16.6843394290198,7.19704728048781
+"African elephant","Oscillospiraceae","10.87 ± 5.18",10.8740796578373,5.17632533265818
+"African elephant","Rikenellaceae","10.52 ± 7.45",10.522519184379,7.44627339285402
+"African elephant","Spirochaetaceae","7.73 ± 6.64",7.73290101482397,6.6430740624385
+"African elephant","Pirellulaceae","3.39 ± 3.34",3.38832783036249,3.34049244558993
+"African elephant","Synergistaceae","2.84 ± 2.48",2.8417890291883,2.4834061940882
+"African elephant","Acidaminococcaceae","2.67 ± 1.87",2.66775680441862,1.87013111252268
+"African elephant","UCG-010","2.41 ± 3.31",2.41075423127944,3.30558402471108
+"African elephant","[Eubacterium]_coprostanoligenes_group","2.33 ± 0.82",2.33316756057529,0.818042273394947
+"African elephant","Anaerovoracaceae","2.18 ± 1.16",2.1835323321919,1.15600931102033
+"African elephant","p-251-o5","2 ± 2.62",1.99922851977627,2.61836004469997
+"African elephant","Paludibacteraceae","1.8 ± 1.32",1.8005026589975,1.3150420607965
+"African elephant","WCHB1-41","1.62 ± 1.8",1.61567499131735,1.79915249972267
+"African elephant","Mycoplasmataceae","1.18 ± 1.78",1.18158535123419,1.77817393797355
+"African elephant","Ruminococcaceae","1.15 ± 1.05",1.15424406303124,1.05372099491997
+"African elephant","Christensenellaceae","1.06 ± 0.74",1.05599710621497,0.735621055590772
+"African wild dog","Lachnospiraceae","18.26 ± 6.2",18.2574764019484,6.19666423680793
+"African wild dog","Fusobacteriaceae","11.51 ± 7.45",11.506501454183,7.44670151626209
+"African wild dog","Prevotellaceae","11.24 ± 5.04",11.2408896161367,5.03666508378496
+"African wild dog","Bacteroidaceae","8.75 ± 5.49",8.7462410817391,5.49382300156089
+"African wild dog","Clostridiaceae","8.53 ± 13.27",8.52614643246467,13.2731339294706
+"African wild dog","Peptostreptococcaceae","6.6 ± 5.12",6.60080180887965,5.12128104799403
+"African wild dog","Erysipelotrichaceae","4 ± 3.38",4.00159385996588,3.38108182337772
+"African wild dog","Acidaminococcaceae","3.45 ± 2.11",3.44728839082486,2.11021598160545
+"African wild dog","Succinivibrionaceae","2.64 ± 3.43",2.64441485550756,3.42781227575314
+"African wild dog","Enterobacteriaceae","2.43 ± 5.68",2.43265633925761,5.67661321420574
+"African wild dog","Rikenellaceae","2.37 ± 3.28",2.37045592787917,3.27869907599792
+"African wild dog","Oscillospiraceae","2.24 ± 2.95",2.23719038084465,2.94907533331432
+"African wild dog","UCG-010","2 ± 6.21",1.99941168537228,6.21090729776564
+"African wild dog","Anaerovoracaceae","1.95 ± 2.06",1.94633234162386,2.05683173753714
+"African wild dog","Erysipelatoclostridiaceae","1.09 ± 1.17",1.09304095636443,1.16758405647117
+"African wild dog","Tannerellaceae","1.04 ± 1.09",1.03829848949035,1.08827442663093
+"Black rhinoceros","Lachnospiraceae","17.72 ± 4.92",17.7168396057662,4.9212401403925
+"Black rhinoceros","Prevotellaceae","16.31 ± 3.07",16.3143268334318,3.07055358879125
+"Black rhinoceros","Rikenellaceae","16.16 ± 6.47",16.1613162635172,6.47378468060815
+"Black rhinoceros","Oscillospiraceae","10.33 ± 4.82",10.3309617703283,4.82000630973381
+"Black rhinoceros","Spirochaetaceae","3.93 ± 2.18",3.92778390304584,2.18227540926043
+"Black rhinoceros","[Eubacterium]_coprostanoligenes_group","3.59 ± 2.17",3.59365119605033,2.16886103869271
+"Black rhinoceros","UCG-010","3.47 ± 1.95",3.47419654289255,1.94992064031887
+"Black rhinoceros","Acidaminococcaceae","3.09 ± 1.37",3.08790924009015,1.37241210925671
+"Black rhinoceros","p-251-o5","2.73 ± 2.52",2.72776271624537,2.52243201468261
+"Black rhinoceros","WCHB1-41","2.44 ± 1.58",2.43698349346553,1.57572607684876
+"Black rhinoceros","Anaerovoracaceae","2.13 ± 1.85",2.12682846669719,1.84914350516212
+"Black rhinoceros","Christensenellaceae","2.11 ± 0.88",2.11344798662859,0.880782329307672
+"Black rhinoceros","Synergistaceae","1.86 ± 0.71",1.85567523507863,0.708654735699196
+"Black rhinoceros","Ruminococcaceae","1.75 ± 0.81",1.7464539994106,0.807237299948505
+"Black rhinoceros","Paludibacteraceae","1.41 ± 0.75",1.41214774565686,0.754971664161283
+"Black rhinoceros","F082","1.14 ± 0.52",1.1415377591175,0.521413527094762
+"Black rhinoceros","Saccharimonadaceae","1.07 ± 1.01",1.07198832992952,1.00667767847015
+"Impala","Oscillospiraceae","16.37 ± 4.26",16.3677525952466,4.25864330977186
+"Impala","Rikenellaceae","13.51 ± 2.1",13.5093352803682,2.10085051283149
+"Impala","Bacteroidaceae","10.11 ± 1.01",10.1050590641406,1.00798856911715
+"Impala","Lachnospiraceae","9.83 ± 3.42",9.82699482779256,3.42448962536863
+"Impala","UCG-010","7.68 ± 2.64",7.6847237757038,2.63676096352633
+"Impala","[Eubacterium]_coprostanoligenes_group","6.67 ± 1.78",6.66827817132054,1.78173589983683
+"Impala","Prevotellaceae","5.09 ± 2.63",5.08946531910047,2.63479001118846
+"Impala","Ruminococcaceae","4.96 ± 1.57",4.95792942391708,1.56820591721435
+"Impala","uncultured","3.95 ± 1.83",3.94739778824599,1.82938087280754
+"Impala","Akkermansiaceae","2.91 ± 1.9",2.9081826841503,1.8967906822888
+"Impala","Clostridia_UCG-014","1.56 ± 1.46",1.56158230755975,1.45772469518879
+"Impala","Acidaminococcaceae","1.45 ± 0.96",1.45456855774375,0.957643547535067
+"Impala","Muribaculaceae","1.43 ± 0.63",1.42569767360175,0.629842799988944
+"Impala","Monoglobaceae","1.27 ± 1.05",1.26869722527419,1.04669729950501
+"Impala","Christensenellaceae","1.21 ± 1.5",1.21018403377625,1.49737066415897
+"Impala","p-251-o5","1.15 ± 0.84",1.15151447505931,0.836505285932834
+"Impala","Bacteroidales_RF16_group","1.12 ± 1.29",1.12033589605859,1.28844608362224
+"Impala","Spirochaetaceae","1.1 ± 1.24",1.10023155574018,1.24382640440821
+"Lion","Lachnospiraceae","15.59 ± 5.67",15.5867551373342,5.6668874486655
+"Lion","Peptostreptococcaceae","13.08 ± 5.38",13.0789186233316,5.37540105789152
+"Lion","Fusobacteriaceae","12.58 ± 6.55",12.5838288160727,6.54939574119154
+"Lion","Clostridiaceae","11.6 ± 8.96",11.602653841369,8.95658136407133
+"Lion","Family_XI","7.25 ± 6.82",7.24551873390889,6.82362261224253
+"Lion","Erysipelotrichaceae","7 ± 5.69",7.00471108079696,5.68886340748189
+"Lion","Bacteroidaceae","6.38 ± 5.21",6.37792294731803,5.21296154516868
+"Lion","Enterobacteriaceae","5.98 ± 12.46",5.98055977986352,12.462612128644
+"Lion","Prevotellaceae","2.54 ± 2.3",2.54231485103707,2.29974211133573
+"Lion","Streptococcaceae","2.37 ± 3.23",2.36959886559794,3.23459108601509
+"Lion","Atopobiaceae","2.18 ± 2.35",2.18107383518721,2.34615189073854
+"Lion","Coriobacteriaceae","1.71 ± 2.47",1.70694069694316,2.46930937994591
+"Lion","Sutterellaceae","1.63 ± 1.77",1.63186726605083,1.77485275405402
+"Lion","Eggerthellaceae","1.02 ± 1.08",1.02268911894305,1.08207357634845
+"Spotted Hyaena","Lachnospiraceae","24.24 ± 7.01",24.240859129234,7.00505766887538
+"Spotted Hyaena","Fusobacteriaceae","11.89 ± 13.12",11.891648947058,13.1247699009748
+"Spotted Hyaena","Clostridia_UCG-014","11.18 ± 13.94",11.1775414067904,13.9444340455398
+"Spotted Hyaena","Bacteroidaceae","6.68 ± 5.16",6.68060885032611,5.1572379743515
+"Spotted Hyaena","Peptostreptococcaceae","5.88 ± 4.5",5.8811582209918,4.49636391775657
+"Spotted Hyaena","Prevotellaceae","5.63 ± 5.3",5.63398921652435,5.30112028378902
+"Spotted Hyaena","Clostridiaceae","5.39 ± 4.19",5.38616525091113,4.19011706691698
+"Spotted Hyaena","Erysipelotrichaceae","4.86 ± 4.11",4.86227152289872,4.11347367926218
+"Spotted Hyaena","Anaerovoracaceae","2.97 ± 2.99",2.96896303978394,2.98835171406094
+"Spotted Hyaena","Family_XI","1.38 ± 1.87",1.37667798365171,1.87139003103558
+"Spotted Hyaena","Acidaminococcaceae","1.26 ± 1.18",1.25826670451924,1.1822525122508
+"Spotted Hyaena","Rikenellaceae","1.14 ± 2.35",1.1427012333851,2.35034693530663
+"Spotted Hyaena","Acholeplasmataceae","1.11 ± 1.49",1.10891288783799,1.49446302378479
+"Spotted Hyaena","Oscillospiraceae","1.02 ± 1.06",1.01856018602547,1.06069528584757
+"Warthog","Lachnospiraceae","25.35 ± 7.43",25.3518595340617,7.42987057881978
+"Warthog","Prevotellaceae","10.93 ± 2.92",10.9280529195726,2.92108935202274
+"Warthog","p-251-o5","10.82 ± 2.77",10.8205955618683,2.77137820620073
+"Warthog","Rikenellaceae","7.45 ± 3.7",7.45130570774117,3.7018335329063
+"Warthog","Spirochaetaceae","7.07 ± 3.86",7.07275271057894,3.85554046403407
+"Warthog","Acidaminococcaceae","5.52 ± 3.19",5.52099879234075,3.18588090910319
+"Warthog","Oscillospiraceae","4.04 ± 2.23",4.04045402054343,2.22514649273884
+"Warthog","Ruminococcaceae","3.62 ± 1.52",3.6211972972889,1.51680047413403
+"Warthog","F082","3.09 ± 1.73",3.09457498796165,1.73255457229193
+"Warthog","Anaerovoracaceae","2.72 ± 1.06",2.72095470438241,1.05536396980184
+"Warthog","[Eubacterium]_coprostanoligenes_group","2.59 ± 1.31",2.59123328315363,1.30527390555201
+"Warthog","Bacteroidales_RF16_group","2.56 ± 1.25",2.5635255318258,1.25249402523297
+"Warthog","Christensenellaceae","2.44 ± 1.35",2.44423502401141,1.35257481854109
+"Warthog","Muribaculaceae","1.46 ± 0.93",1.46420980494742,0.930076683200884
+"Warthog","UCG-010","1.18 ± 1.03",1.18311022840259,1.02592805544738
+"Warthog","Bacteroidales_BS11_gut_group","1.18 ± 0.92",1.178701159974,0.919907768934903
+"White rhinoceros","Lachnospiraceae","19.22 ± 6.03",19.2204102384941,6.02704114187429
+"White rhinoceros","Prevotellaceae","13.29 ± 3.98",13.2874993542081,3.9849104633039
+"White rhinoceros","Rikenellaceae","8.99 ± 4.05",8.98648118377821,4.04602844769247
+"White rhinoceros","Spirochaetaceae","4.71 ± 3.63",4.70559073335003,3.62723001812913
+"White rhinoceros","F082","4.2 ± 2.32",4.19853507492306,2.3230733593412
+"White rhinoceros","Oscillospiraceae","4.17 ± 3.2",4.17197276094862,3.20400023842685
+"White rhinoceros","Acidaminococcaceae","3.82 ± 2.4",3.81637371995185,2.39986144515041
+"White rhinoceros","Bacteroidales_UCG-001","3.7 ± 2.12",3.6979453363558,2.12143794671104
+"White rhinoceros","Christensenellaceae","3.43 ± 2.21",3.42883207833446,2.2112491811668
+"White rhinoceros","Ruminococcaceae","3.2 ± 1.31",3.19960449939261,1.30823960530721
+"White rhinoceros","Clostridia_UCG-014","3.01 ± 6.7",3.01328396250262,6.69929418342951
+"White rhinoceros","Hungateiclostridiaceae","2.67 ± 1.62",2.66712069447818,1.62248741102879
+"White rhinoceros","Fibrobacteraceae","2.65 ± 3.92",2.64903516306174,3.92247332714158
+"White rhinoceros","p-251-o5","2.3 ± 2.2",2.29789745659699,2.20081455919552
+"White rhinoceros","[Eubacterium]_coprostanoligenes_group","1.88 ± 1.53",1.87950466782823,1.53417099951877
+"White rhinoceros","UCG-010","1.54 ± 1.21",1.53855385420895,1.20813064171743
+"White rhinoceros","Anaerovoracaceae","1.47 ± 0.98",1.4702681530445,0.981933622889016
+"White rhinoceros","Porphyromonadaceae","1.4 ± 1.75",1.40332141164237,1.74780816053094
+"White rhinoceros","Saccharimonadaceae","1.15 ± 1.15",1.15452105710197,1.15259745494111

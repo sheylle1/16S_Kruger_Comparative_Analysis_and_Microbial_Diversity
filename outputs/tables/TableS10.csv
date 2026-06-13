@@ -1,0 +1,91 @@
+"Rank","Description","diet_type","Mean_Z","SD_Z","Enriched_in","Depleted_in","Enrichment_score"
+1,"L-tryptophan biosynthesis","Carnivores",-1.17061855786581,0.71523145417782,"Ruminants","Carnivores",1.98011690130212
+2,"L-tryptophan biosynthesis","Non-Ruminants",0.521343515721013,0.290892150194009,"Ruminants","Carnivores",1.98011690130212
+3,"L-tryptophan biosynthesis","Ruminants",0.809498343436314,0.406735541270641,"Ruminants","Carnivores",1.98011690130212
+4,"superpathway of L-tyrosine biosynthesis","Carnivores",1.1084022302079,0.585109311256924,"Carnivores","Ruminants",1.95498867537179
+5,"superpathway of L-tyrosine biosynthesis","Non-Ruminants",-0.448166318594679,0.511920462643713,"Carnivores","Ruminants",1.95498867537179
+6,"superpathway of L-tyrosine biosynthesis","Ruminants",-0.84658644516389,0.621590557463979,"Carnivores","Ruminants",1.95498867537179
+7,"superpathway of L-phenylalanine biosynthesis","Carnivores",1.11815188714215,0.611901626663431,"Carnivores","Ruminants",1.95454631376114
+8,"superpathway of L-phenylalanine biosynthesis","Non-Ruminants",-0.462119609254263,0.486236727351532,"Carnivores","Ruminants",1.95454631376114
+9,"superpathway of L-phenylalanine biosynthesis","Ruminants",-0.836394426618991,0.587604942473619,"Carnivores","Ruminants",1.95454631376114
+10,"superpathway of polyamine biosynthesis I","Carnivores",0.889968370895888,0.813044996107257,"Carnivores","Ruminants",1.90601425223277
+11,"superpathway of polyamine biosynthesis I","Non-Ruminants",-0.168974486208057,0.60326890272445,"Carnivores","Ruminants",1.90601425223277
+12,"superpathway of polyamine biosynthesis I","Ruminants",-1.01604588133688,0.623618760425249,"Carnivores","Ruminants",1.90601425223277
+13,"sucrose degradation III (sucrose invertase)","Carnivores",0.999690657283762,0.781376912439571,"Carnivores","Ruminants",1.87807321052708
+14,"sucrose degradation III (sucrose invertase)","Non-Ruminants",-0.339037209667215,0.558802328407553,"Carnivores","Ruminants",1.87807321052708
+15,"sucrose degradation III (sucrose invertase)","Ruminants",-0.878382553243317,0.591846001214737,"Carnivores","Ruminants",1.87807321052708
+16,"L-histidine biosynthesis","Carnivores",-1.05350893617592,0.913421120266414,"Ruminants","Carnivores",1.86663686830542
+17,"L-histidine biosynthesis","Non-Ruminants",0.42116460666849,0.345431591836535,"Ruminants","Carnivores",1.86663686830542
+18,"L-histidine biosynthesis","Ruminants",0.813127932129499,0.437044102751302,"Ruminants","Carnivores",1.86663686830542
+19,"cob(II)yrinate a,c-diamide biosynthesis I (early cobalt insertion)","Carnivores",1.14122221746988,0.862989459598778,"Carnivores","Ruminants",1.825500539813
+20,"cob(II)yrinate a,c-diamide biosynthesis I (early cobalt insertion)","Non-Ruminants",-0.567784972225958,0.211334931313989,"Carnivores","Ruminants",1.825500539813
+21,"cob(II)yrinate a,c-diamide biosynthesis I (early cobalt insertion)","Ruminants",-0.684278322343128,0.309400217376497,"Carnivores","Ruminants",1.825500539813
+22,"L-lysine biosynthesis II","Carnivores",1.15485977757088,0.802058758439188,"Carnivores","Non-Ruminants",1.82294995597139
+23,"L-lysine biosynthesis II","Non-Ruminants",-0.668090178400511,0.287769692315143,"Carnivores","Non-Ruminants",1.82294995597139
+24,"L-lysine biosynthesis II","Ruminants",-0.527681738279925,0.317250181624938,"Carnivores","Non-Ruminants",1.82294995597139
+25,"superpathway of branched amino acid biosynthesis","Carnivores",-1.07669010201111,0.877571612714668,"Ruminants","Carnivores",1.81955380210377
+26,"superpathway of branched amino acid biosynthesis","Non-Ruminants",0.480466363794554,0.278475889823859,"Ruminants","Carnivores",1.81955380210377
+27,"superpathway of branched amino acid biosynthesis","Ruminants",0.742863700092659,0.549409966222409,"Ruminants","Carnivores",1.81955380210377
+28,"superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation","Carnivores",1.07779081863582,0.776955401522553,"Carnivores","Ruminants",1.80937216663487
+29,"superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation","Non-Ruminants",-0.48779208296568,0.46174024284859,"Carnivores","Ruminants",1.80937216663487
+30,"superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation","Ruminants",-0.731581347999056,0.555021657247732,"Carnivores","Ruminants",1.80937216663487
+31,"superpathway of L-serine and glycine biosynthesis I","Carnivores",-1.05542269801216,0.991110544432179,"Ruminants","Carnivores",1.79666519607754
+32,"superpathway of L-serine and glycine biosynthesis I","Non-Ruminants",0.463567869702808,0.219518964706151,"Ruminants","Carnivores",1.79666519607754
+33,"superpathway of L-serine and glycine biosynthesis I","Ruminants",0.741242498065382,0.372519004304986,"Ruminants","Carnivores",1.79666519607754
+34,"L-isoleucine biosynthesis III","Carnivores",-0.990835144956534,0.958357381968813,"Ruminants","Carnivores",1.78759251829062
+35,"L-isoleucine biosynthesis III","Non-Ruminants",0.37794553117937,0.364957356426491,"Ruminants","Carnivores",1.78759251829062
+36,"L-isoleucine biosynthesis III","Ruminants",0.796757373334087,0.574487536086789,"Ruminants","Carnivores",1.78759251829062
+37,"aerobic respiration I (cytochrome c)","Carnivores",-0.926344186591171,0.455092296865367,"Non-Ruminants","Carnivores",1.73291467211527
+38,"aerobic respiration I (cytochrome c)","Non-Ruminants",0.806570485524103,0.796172107108541,"Non-Ruminants","Carnivores",1.73291467211527
+39,"aerobic respiration I (cytochrome c)","Ruminants",-0.0536399133364531,0.641645421215811,"Non-Ruminants","Carnivores",1.73291467211527
+40,"thiazole biosynthesis II (Bacillus)","Carnivores",1.11777511994089,0.82779021386941,"Carnivores","Non-Ruminants",1.72266507864503
+41,"thiazole biosynthesis II (Bacillus)","Non-Ruminants",-0.60488995870414,0.327718520823303,"Carnivores","Non-Ruminants",1.72266507864503
+42,"thiazole biosynthesis II (Bacillus)","Ruminants",-0.58429048791021,0.454816549519918,"Carnivores","Non-Ruminants",1.72266507864503
+43,"L-isoleucine biosynthesis II","Carnivores",-1.00125502383418,0.963167565733234,"Ruminants","Carnivores",1.7023334163153
+44,"L-isoleucine biosynthesis II","Non-Ruminants",0.440979986398807,0.380931884842839,"Ruminants","Carnivores",1.7023334163153
+45,"L-isoleucine biosynthesis II","Ruminants",0.701078392481126,0.563497392219291,"Ruminants","Carnivores",1.7023334163153
+46,"ppGpp biosynthesis","Carnivores",1.08258282350157,1.01585222041347,"Carnivores","Non-Ruminants",1.67330355633962
+47,"ppGpp biosynthesis","Non-Ruminants",-0.590720732838045,0.0719285386591961,"Carnivores","Non-Ruminants",1.67330355633962
+48,"ppGpp biosynthesis","Ruminants",-0.557304781597195,0.233449584625021,"Carnivores","Non-Ruminants",1.67330355633962
+49,"TCA cycle VIII (helicobacter)","Carnivores",-1.04233683671841,0.561728442817817,"Ruminants","Carnivores",1.67328106585663
+50,"TCA cycle VIII (helicobacter)","Non-Ruminants",0.515205760172104,0.736968972970897,"Ruminants","Carnivores",1.67328106585663
+51,"TCA cycle VIII (helicobacter)","Ruminants",0.630944229138226,0.596652220742513,"Ruminants","Carnivores",1.67328106585663
+52,"phosphopantothenate biosynthesis I","Carnivores",-1.01579540303437,0.934790662839083,"Ruminants","Carnivores",1.6730139380377
+53,"phosphopantothenate biosynthesis I","Non-Ruminants",0.478055898891771,0.470716965712431,"Ruminants","Carnivores",1.6730139380377
+54,"phosphopantothenate biosynthesis I","Ruminants",0.657218535003332,0.463395992662933,"Ruminants","Carnivores",1.6730139380377
+55,"superpathway of L-alanine biosynthesis","Carnivores",1.05047335289016,0.766289630682231,"Carnivores","Non-Ruminants",1.66843544909664
+56,"superpathway of L-alanine biosynthesis","Non-Ruminants",-0.617962096206483,0.465773077828011,"Carnivores","Non-Ruminants",1.66843544909664
+57,"superpathway of L-alanine biosynthesis","Ruminants",-0.461908399045476,0.698415287953796,"Carnivores","Non-Ruminants",1.66843544909664
+58,"L-ornithine biosynthesis","Carnivores",-0.99895251522463,0.984964437021989,"Ruminants","Carnivores",1.66203452485385
+59,"L-ornithine biosynthesis","Non-Ruminants",0.460616372155402,0.50627199958138,"Ruminants","Carnivores",1.66203452485385
+60,"L-ornithine biosynthesis","Ruminants",0.663082009629224,0.287195532488592,"Ruminants","Carnivores",1.66203452485385
+61,"nitrate reduction VI (assimilatory)","Carnivores",1.07573704689312,1.01207696551477,"Carnivores","Ruminants",1.65477877033173
+62,"nitrate reduction VI (assimilatory)","Non-Ruminants",-0.572647898958812,0.138084354301883,"Carnivores","Ruminants",1.65477877033173
+63,"nitrate reduction VI (assimilatory)","Ruminants",-0.579041723438606,0.27719529163099,"Carnivores","Ruminants",1.65477877033173
+64,"fatty acid elongation -- saturated","Carnivores",-1.03403854037966,0.825939091021497,"Ruminants","Carnivores",1.64555462727925
+65,"fatty acid elongation -- saturated","Non-Ruminants",0.519279916942655,0.482712749672781,"Ruminants","Carnivores",1.64555462727925
+66,"fatty acid elongation -- saturated","Ruminants",0.611516086899589,0.639136659386573,"Ruminants","Carnivores",1.64555462727925
+67,"TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase)","Carnivores",-1.02512241055382,0.892176732001747,"Ruminants","Carnivores",1.63854157455847
+68,"TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase)","Non-Ruminants",0.510729521164077,0.467788291198632,"Ruminants","Carnivores",1.63854157455847
+69,"TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase)","Ruminants",0.613419164004646,0.5528353068932,"Ruminants","Carnivores",1.63854157455847
+70,"TCA cycle I (prokaryotic)","Carnivores",-1.06439320233838,0.817703995550309,"Non-Ruminants","Carnivores",1.63369425452545
+71,"TCA cycle I (prokaryotic)","Non-Ruminants",0.569301052187062,0.508281483111004,"Non-Ruminants","Carnivores",1.63369425452545
+72,"TCA cycle I (prokaryotic)","Ruminants",0.56819287340803,0.487223814096918,"Non-Ruminants","Carnivores",1.63369425452545
+73,"acetyl-CoA fermentation to butanoate II","Carnivores",1.00767859657852,0.943454435854885,"Carnivores","Non-Ruminants",1.62911632776239
+74,"acetyl-CoA fermentation to butanoate II","Non-Ruminants",-0.621437731183874,0.33690292950681,"Carnivores","Non-Ruminants",1.62911632776239
+75,"acetyl-CoA fermentation to butanoate II","Ruminants",-0.392611449530037,0.640582691166454,"Carnivores","Non-Ruminants",1.62911632776239
+76,"L-lysine fermentation to acetate and butanoate","Carnivores",1.03256096624692,1.04859926398254,"Carnivores","Non-Ruminants",1.61460409338064
+77,"L-lysine fermentation to acetate and butanoate","Non-Ruminants",-0.582043127133725,0.233055757458348,"Carnivores","Non-Ruminants",1.61460409338064
+78,"L-lysine fermentation to acetate and butanoate","Ruminants",-0.498752107128891,0.335240881218828,"Carnivores","Non-Ruminants",1.61460409338064
+79,"TCA cycle VI (obligate autotrophs)","Carnivores",-1.03023858370639,0.760139036333442,"Non-Ruminants","Carnivores",1.60888485415607
+80,"TCA cycle VI (obligate autotrophs)","Non-Ruminants",0.578646270449687,0.621514433742217,"Non-Ruminants","Carnivores",1.60888485415607
+81,"TCA cycle VI (obligate autotrophs)","Ruminants",0.501308766107597,0.556333935814977,"Non-Ruminants","Carnivores",1.60888485415607
+82,"purine ribonucleosides degradation","Carnivores",1.02900474826737,0.818071796895225,"Carnivores","Ruminants",1.58802239687887
+83,"purine ribonucleosides degradation","Non-Ruminants",-0.544858826363435,0.52216227880188,"Carnivores","Ruminants",1.58802239687887
+84,"purine ribonucleosides degradation","Ruminants",-0.5590176486115,0.621936914938331,"Carnivores","Ruminants",1.58802239687887
+85,"L-leucine degradation I","Carnivores",-0.697322316481243,0.377785393262766,"Non-Ruminants","Carnivores",1.56271726658275
+86,"L-leucine degradation I","Non-Ruminants",0.865394950101503,0.876847947432473,"Non-Ruminants","Carnivores",1.56271726658275
+87,"L-leucine degradation I","Ruminants",-0.495362921087481,0.636498509281804,"Non-Ruminants","Carnivores",1.56271726658275
+88,"pantothenate and coenzyme A biosynthesis I","Carnivores",-0.989472751623996,0.988441368110153,"Ruminants","Carnivores",1.5434401903466
+89,"pantothenate and coenzyme A biosynthesis I","Non-Ruminants",0.514603759112683,0.476712477667959,"Ruminants","Carnivores",1.5434401903466
+90,"pantothenate and coenzyme A biosynthesis I","Ruminants",0.5539674387226,0.442429823658122,"Ruminants","Carnivores",1.5434401903466

@@ -1,0 +1,31 @@
+"Rank","Pathway_ID","Description","F_statistic"
+1,"TRPSYN-PWY","L-tryptophan biosynthesis",131.365
+2,"PWY-2941","L-lysine biosynthesis II",112.764
+3,"PWY-7377","cob(II)yrinate a,c-diamide biosynthesis I (early cobalt insertion)",103.298
+4,"PWY-6628","superpathway of L-phenylalanine biosynthesis",98.991
+5,"PWY-6630","superpathway of L-tyrosine biosynthesis",94.939
+6,"PWY-6891","thiazole biosynthesis II (Bacillus)",89.49
+7,"BRANCHED-CHAIN-AA-SYN-PWY","superpathway of branched amino acid biosynthesis",75.499
+8,"GLCMANNANAUT-PWY","superpathway of N-acetylglucosamine, N-acetylmannosamine and N-acetylneuraminate degradation",75.449
+9,"PPGPPMET-PWY","ppGpp biosynthesis",74.388
+10,"PWY490-3","nitrate reduction VI (assimilatory)",71.833
+11,"HISTSYN-PWY","L-histidine biosynthesis",71.162
+12,"SER-GLYSYN-PWY","superpathway of L-serine and glycine biosynthesis I",68.362
+13,"TCA","TCA cycle I (prokaryotic)",67.943
+14,"PWY0-1061","superpathway of L-alanine biosynthesis",64.556
+15,"REDCITCYC","TCA cycle VIII (helicobacter)",61.708
+16,"PWY-621","sucrose degradation III (sucrose invertase)",60.491
+17,"FASYN-ELONG-PWY","fatty acid elongation -- saturated",59.205
+18,"P163-PWY","L-lysine fermentation to acetate and butanoate",58.748
+19,"PWY-3781","aerobic respiration I (cytochrome c)",58.536
+20,"PWY-5913","TCA cycle VI (obligate autotrophs)",58.094
+21,"PWY0-1296","purine ribonucleosides degradation",57.561
+22,"PWY-6969","TCA cycle V (2-oxoglutarate:ferredoxin oxidoreductase)",56.922
+23,"PANTO-PWY","phosphopantothenate biosynthesis I",55.32
+24,"PWY-5103","L-isoleucine biosynthesis III",54.152
+25,"PWY-5676","acetyl-CoA fermentation to butanoate II",54.035
+26,"PWY-5101","L-isoleucine biosynthesis II",53.028
+27,"GLUTORN-PWY","L-ornithine biosynthesis",51.644
+28,"LEU-DEG2-PWY","L-leucine degradation I",51.451
+29,"POLYAMSYN-PWY","superpathway of polyamine biosynthesis I",49.948
+30,"PANTOSYN-PWY","pantothenate and coenzyme A biosynthesis I",48.387

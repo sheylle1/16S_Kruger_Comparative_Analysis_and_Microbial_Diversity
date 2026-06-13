@@ -1,0 +1,7 @@
+"UniFrac Metric","Group 1","Group 2","Sample Size","Permutations","Pseudo-F","p-value","q-value","R²"
+"Unweighted UniFrac","Non-Ruminant","Carnivore",68,9999,18.07,"1e-04","1e-04",0.215
+"Unweighted UniFrac","Ruminant","Carnivore",52,9999,13.28,"1e-04","1e-04",0.21
+"Unweighted UniFrac","Non-Ruminant","Ruminant",58,9999,10.77,"1e-04","1e-04",0.161
+"Weighted UniFrac","Non-Ruminant","Carnivore",68,9999,36.7,"1e-04","1e-04",0.357
+"Weighted UniFrac","Ruminant","Carnivore",52,9999,27.54,"1e-04","1e-04",0.355
+"Weighted UniFrac","Non-Ruminant","Ruminant",58,9999,16.13,"1e-04","1e-04",0.224
