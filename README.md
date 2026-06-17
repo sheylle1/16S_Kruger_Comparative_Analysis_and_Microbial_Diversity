@@ -25,11 +25,12 @@ This repository contains data, code, and analysis workflows for a comparative st
 │   ├── R/                      # R analysis scripts
 │   ├── machine-learning/       # Random Forest and ML analyses
 │   └── extra/                  # Additional analyses
-├── output/
+├── outputs/
 │   └── figures/                # Generated figures
-│   └── extra/                  # Extra outputs
+│   ├── Final/                  # Final figures
+│   └── tables/                 # Generated tables
 └── docs/
-    ├── supplementary/          # Supplementary figures
+    ├── supplementary/          # Supplementary data
     └── main/                   # Manuscript figures
 
 ```
