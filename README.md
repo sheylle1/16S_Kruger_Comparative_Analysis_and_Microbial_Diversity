@@ -81,20 +81,19 @@ To facilitate reproducibility without reprocessing raw data, intermediate output
 **Methods:** Generated in R using QIIME2 output
 
 **Scripts:**
-- `scripts/R/plot_diversity.R`
+- `scripts/R/Figure2.R`
 
 **Metrics analyzed:**
 - Shannon diversity
 - Faith's Phylogenetic Diversity (PD)
-- UniFrac distances
 
 **Output:**
-- `output/figures/alpha-diversity/`
-- `docs/main/Manuscript_figures.pdf`
+- `output/figures/`
+- `output/Final/figures/`
 
 ---
 
-### Figures 3 & 4: Taxonomic Composition by Diet Group
+### Figures 3: Taxonomic Composition by Diet Group
 
 **Methods:** QIIME2 taxonomic classification with R aggregation and visualization
 
@@ -103,85 +102,97 @@ To facilitate reproducibility without reprocessing raw data, intermediate output
 - `data/raw/level-6.csv`
 
 **Scripts:**
-- `scripts/R/` (taxonomy plotting scripts)
+- `scripts/R/Figure3_A.R`
+- `scripts/R/Figure3_B.R`
 
 **Analyses:**
 - Top 20 family-level composition
 - Top 30 genus-level composition
 
 **Output:**
-- `output/figures/tax_by_group/`
-- `docs/main/Manuscript_figures.pdf`
+- `output/figures/`
+- `output/Final/figures/`
 
 ---
-### Figures 5 & 6: Ternary Plot & Heatmap
+### Figures 4: Ternary Plot of Genus Distribution
 
-**Methods:** QIIME2 taxonomic classification with R aggregation and visualization
+**Methods:** Visualization of proportional distribution of dominant bacterial families across dietary groups.
 
 **Input files:**
 - `data/processed/taxonomic/` (QIIME2 taxonomy output)
 
 **Scripts:**
-- `scripts/R/` (taxonomy plotting scripts)
-
-**Analyses:**
-- Top 30 genus-level composition
-- Identified genus level taxa of potential pathogenic origin.
+- `scripts/R/Figure4.R`
 
 **Output:**
-- `output/figures/Final_figures/`
+- `output/figures/`
+- `output/Final/figures/`
 
 ---
 
-### Figures 7 & 8: Taxonomic Composition by Species
+### Figures 5: Heatmap of Potential Pathogenic Genera
 
-**Methods:** QIIME2 taxonomic classification with R aggregation and visualization
+**Methods:** Visualization of absolute read counts for genera with known or potential pathogenic roles.
 
 **Input files:**
-- `data/processed/taxonomic/` (QIIME2 taxonomy output)
+- `data/processed/`
 
 **Scripts:**
-- `scripts/R/` (taxonomy plotting scripts)
+- `scripts/R/Figure5.R`
+
+**Output:**
+- `output/figures/`
+- `output/Final/figures/`
+
+---
+
+### Figures 6: Taxonomic Composition by Host Species
+
+**Methods:** QIIME2 taxonomic classification aggregated and visualized at the host species level.
+
+**Input files:**
+- `data/processed/` (QIIME2 taxonomy output)
+
+**Scripts:**
+- `scripts/R/Figure6.R` (taxonomy plotting scripts)
 
 **Analyses:**
-- Top 20 family-level composition
-- Top 30 genus-level composition
+- Species-specific microbiota profiles within each dietary group
 
 **Output:**
-- `output/figures/tax_by_species/`
-- `output/figures/Final_figures/`
+- `output/figures/`
+- `output/Final/`
 
 ---
 
-### Figures 9 & 10: Variable Importance (Machine Learning)
+### Figures 7: Predicted Functional Profiles (PICRUSt2)
 
-**Methods:** Random Forest classification and feature importance analysis in R
+**Methods:** Functional prediction using PICRUSt2 and visualization of the most variable MetaCyc pathways.
 
 **Scripts:**
-- `scripts/machine-learning/` (RF classification, confusion matrices)
-- `scripts/R/` (variable importance)
+- `scripts/R/Figure7.R` (RF classification, confusion matrices)
+
+**Analyses:**
+- Hierarchical clustering of top variable pathways across dietary groups and focal species comparisons
 
 **Output:**
-- `output/figures/machine-learning/`
-- `output/figures/Final_figures/`
+- `output/figures/`
 
 ---
 
-### Additional Analyses
+
+### Supplementary Figures (Figure S1 – Figure S9)
 
 Supplementary analyses are included to provide extended insights:
 
 **Types of analyses:**
-- Functional analyses
-- Association analyses
-- Disease detection
-- Extended importance analyses
+- Extended analyses including rarefaction curves, atypical sample clustering, extended taxonomic breakdowns, LEfSe results, and additional functional predictions.
 
 **Scripts:**
-- `scripts/extra/`
+- `scripts/R/FigureS1.R` through `scripts/R/FigureS9.R`
 
 **Output:**
-- `output/figures/extra/`
+- `output/figures/`
 
 ---
 
